@@ -78,4 +78,27 @@
    * Removing this will display an annoying update banner.
    */
   --update-notice-1: none;
+
+  --online-color: #23a559;
+  --idle-color: #f0b132;
+  --dnd-color: #f23f42;
+  --offline-color: #80848e;
+}
+
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Online"]) {
+    border-bottom: 3px solid var(--online-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Idle"]) {
+    border-bottom: 3px solid var(--idle-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Do Not Disturb"]) {
+    border-bottom: 3px solid var(--dnd-color)!important;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
+    border-bottom: 3px solid var(--offline-color)!important;
+}
+/* Transition + fallback colour */
+.container-YkUktl {
+    transition: border 100ms ease-in;
+    border-bottom: 3px solid var(--blurple);
 }
