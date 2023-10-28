@@ -9,6 +9,15 @@
  * @website https://gibbu.me/
 */
 
+#app-mount .bg__12180 {
+	background: var(--background-image);
+	background-position: var(--background-image-position, center);
+	background-size: var(--background-image-size, cover);
+}
+
+.sidebarRegion__60457 {
+	background-color: rgba(0, 0, 0, 0.5)
+}
 
 @import url('https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css');
 :root {
